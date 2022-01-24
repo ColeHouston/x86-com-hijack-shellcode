@@ -1,4 +1,4 @@
-; x86 Chrome COM Hijacking shellcode for persistence (Size: 541 bytes)
+; x86 Chrome COM Hijacking shellcode for persistence (Size: 541 bytes) (badchars avoided: \x00, \x0a, \x0d
 ; Downloads a DLL from http://localhost/d.dll and saves it to C:\Users\Public\d.dll
 ; Creates registry keys in the HKCU hive to run the DLL every time Chrome is opened
 ; This shellcode was tested on: Microsoft Windows 10 Pro Version 10.0.19042 Build 19042 (64 bit)
