@@ -179,7 +179,7 @@ call_regcreatekeyexa:
   push 0x45524157              ;  Push WARE
   push 0x54464f53              ;  Push SOFT
   push esp                     ;  Create a pointer to the regkey name string
-  pop ecx                      ;  Store the pointer in EBX
+  pop ecx                      ;  Store the pointer in ECX
   push eax                     ;  Push lpdwDisposition = null
   push edi                     ;  Push phkResult = pointer to new key
   push eax                     ;  Push lpSecurityAttributes = null
