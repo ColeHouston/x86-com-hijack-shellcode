@@ -8,6 +8,8 @@ The shellcode will download a DLL from the URL "http://localhost/d.dll" and save
 
 With these values set d.dll will be executed every time Google Chrome starts up, resulting in persistence on the system.
 
+This shellcode is free of some common bad characters, including \x00, \x0a, and \x0d. The shellcode is position independent as well.
+
 ### Note:
 The URLDownloadToFileA API is picky about the URLs supplied to it, and I could not get the API to work over HTTP with any sites I was accessing over WAN. However, HTTPS works just fine, so be sure to host the DLL on a URL over HTTPS if modifying the shellcode to download something over the internet.
 
